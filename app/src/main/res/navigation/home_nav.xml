@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.syamil.izzat.goldappsample.view.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_topUpFragment"
+            app:destination="@id/topUpFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/topUpFragment"
+        android:name="com.syamil.izzat.goldappsample.view.TopUpFragment"
+        android:label="TopUpFragment"
+        tools:layout="@layout/fragment_top_up">
+        <action
+            android:id="@+id/action_topUpFragment_to_successTopUpDialog"
+            app:destination="@id/successTopUpDialog"
+            app:popUpTo="@id/topUpFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+    <dialog
+        android:id="@+id/successTopUpDialog"
+        android:name="com.syamil.izzat.goldappsample.view.dialog.SuccessTopUpDialog"
+        android:label="SuccessTopUpDialog"
+        tools:layout="@layout/dialog_successful_topup"/>
+</navigation>

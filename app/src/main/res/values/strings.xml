@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gold App Sample</string>
+    <string name="per_gram">per gram</string>
+    <string name="gram">Gram</string>
+    <string name="usd">USD</string>
+    <string name="topup">Top Up</string>
+    <string name="purchase">Purchase</string>
+    <string name="cancel">Cancel</string>
+    <string name="warning_title">Gold Purchase</string>
+    <string name="warning">You\'re about to purchase 0 g for 0.00 USD. Are you sure?</string>
+    <string name="topup_success">Topped up successful!</string>
+    <string name="ok">OK</string>
+</resources>
